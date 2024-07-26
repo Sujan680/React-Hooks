@@ -9,7 +9,10 @@ export default function Clock() {
             const updateDate = new Date();
             setDate(updateDate.toLocaleTimeString())
         }, 1000)
+        
     }, [ ])
+
+   
 
   return (
 

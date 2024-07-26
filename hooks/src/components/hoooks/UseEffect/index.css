@@ -3,10 +3,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .container button{
     background-color: #3b5151;
     color: white;
 }
+
+.container input{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
