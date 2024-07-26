@@ -1,4 +1,5 @@
 import ReactUseEffect from "./components/hoooks/UseEffect"
+import CleanUp from "./components/hoooks/UseEffect/CleanUp"
 import Clock from "./components/hoooks/UseEffect/clock"
 import UseEffectChallenge from "./components/hoooks/UseEffect/UseEffectChallenge"
 
@@ -11,6 +12,7 @@ function App() {
         <ReactUseEffect/>
         <Clock/>
         <UseEffectChallenge/>
+        <CleanUp />
     </>
   )
 }
