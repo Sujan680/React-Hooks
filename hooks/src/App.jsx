@@ -1,6 +1,7 @@
 import ReactUseEffect from "./components/hoooks/UseEffect"
 import CleanUp from "./components/hoooks/UseEffect/CleanUp"
 import Clock from "./components/hoooks/UseEffect/clock"
+import HowNotToFetchApi from "./components/hoooks/UseEffect/HowNotToFetchApi"
 import UseEffectChallenge from "./components/hoooks/UseEffect/UseEffectChallenge"
 
 function App() {
@@ -9,10 +10,11 @@ function App() {
   return (
     <>
         <h2 style={{textAlign: 'center', fontStyle:'italic'}}>Hi, this is useEffect hooks concepts</h2>
-        <ReactUseEffect/>
+        {/* <ReactUseEffect/>
         <Clock/>
         <UseEffectChallenge/>
-        <CleanUp />
+        <CleanUp /> */}
+        {/* <HowNotToFetchApi/> */}
     </>
   )
 }
