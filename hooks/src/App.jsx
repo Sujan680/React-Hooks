@@ -1,6 +1,7 @@
 import ReactUseEffect from "./components/hoooks/UseEffect"
 import CleanUp from "./components/hoooks/UseEffect/CleanUp"
 import Clock from "./components/hoooks/UseEffect/clock"
+import FetchApi from "./components/hoooks/UseEffect/FetchApi"
 import HowNotToFetchApi from "./components/hoooks/UseEffect/HowNotToFetchApi"
 import UseEffectChallenge from "./components/hoooks/UseEffect/UseEffectChallenge"
 
@@ -15,6 +16,7 @@ function App() {
         <UseEffectChallenge/>
         <CleanUp /> */}
         {/* <HowNotToFetchApi/> */}
+        <FetchApi/>
     </>
   )
 }
