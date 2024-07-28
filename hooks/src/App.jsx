@@ -1,3 +1,4 @@
+import FetchDataComponent from "./components/hoooks/FetchApi/FetchDataComponent"
 import ReactUseEffect from "./components/hoooks/UseEffect"
 import CleanUp from "./components/hoooks/UseEffect/CleanUp"
 import Clock from "./components/hoooks/UseEffect/clock"
@@ -11,14 +12,15 @@ function App() {
 
   return (
     <>
-        <h2 style={{textAlign: 'center', fontStyle:'italic'}}>Hi, this is useEffect hooks concepts</h2>
+        <h2 style={{textAlign: 'center', fontStyle:'italic'}}>Hi, this is hooks concepts</h2>
         {/* <ReactUseEffect/>
         <Clock/>
         <UseEffectChallenge/>
         <CleanUp /> */}
         {/* <HowNotToFetchApi/> */}
         {/* <FetchApi/> */}  
-        <FetchUsingAsyncAwait/>
+        {/* <FetchUsingAsyncAwait/> */}
+        <FetchDataComponent/>
     </>
   )
 }
