@@ -7,6 +7,8 @@ import FetchUsingAsyncAwait from "./components/hoooks/UseEffect/FetchUsingAsyncA
 import HowNotToFetchApi from "./components/hoooks/UseEffect/HowNotToFetchApi"
 import UseEffectChallenge from "./components/hoooks/UseEffect/UseEffectChallenge"
 import Form from "./components/hoooks/useStateHook/Form"
+import Profile from "./components/hoooks/useStateHook/Profile"
+import Todo from "./components/hoooks/useStateHook/Todo"
 
 function App() {
  
@@ -23,7 +25,10 @@ function App() {
         {/* <FetchUsingAsyncAwait/> */}
         {/* <FetchDataComponent/> */}
 
-        <Form/>
+        {/* <Form/> */}
+        <Profile/>
+
+        <Todo/>
 
     </>
   )
