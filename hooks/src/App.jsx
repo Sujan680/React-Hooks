@@ -6,6 +6,7 @@ import FetchApi from "./components/hoooks/UseEffect/FetchApi"
 import FetchUsingAsyncAwait from "./components/hoooks/UseEffect/FetchUsingAsyncAwait"
 import HowNotToFetchApi from "./components/hoooks/UseEffect/HowNotToFetchApi"
 import UseEffectChallenge from "./components/hoooks/UseEffect/UseEffectChallenge"
+import Counter from "./components/hoooks/useStateHook/Counter"
 import Form from "./components/hoooks/useStateHook/Form"
 import Profile from "./components/hoooks/useStateHook/Profile"
 import Todo from "./components/hoooks/useStateHook/Todo"
@@ -27,8 +28,8 @@ function App() {
 
         {/* <Form/> */}
         <Profile/>
-
         <Todo/>
+        <Counter/>
 
     </>
   )
