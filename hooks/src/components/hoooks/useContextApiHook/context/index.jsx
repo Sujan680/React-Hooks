@@ -2,15 +2,17 @@
 
 //create context first
 
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
 export const GlobalContext = createContext(null);
 
 //create the global state that receive component as children
 
 const GlobalState = ({children}) => {
+
+    const [theme, setTheme] = useState('light')
     return(
-        <GlobalContext.Provider value={{ }}>
+        <GlobalContext.Provider value={{theme, setTheme}}>
                 {children}
         </GlobalContext.Provider>
     )
