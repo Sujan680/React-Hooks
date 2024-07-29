@@ -1,4 +1,9 @@
 import FetchDataComponent from "./components/hoooks/FetchApi/FetchDataComponent"
+import ContextButton from "./components/hoooks/useContextApiHook/context/context-component/Button"
+import TextComponent from "./components/hoooks/useContextApiHook/context/context-component/Text"
+import ContextApi from "./components/hoooks/useContextApiHook/ContextApi"
+import CounterProvider from "./components/hoooks/useContextApiHook/CounterProvider"
+import NestedComponent from "./components/hoooks/useContextApiHook/NestedComponent"
 import ReactUseEffect from "./components/hoooks/UseEffect"
 import CleanUp from "./components/hoooks/UseEffect/CleanUp"
 import Clock from "./components/hoooks/UseEffect/clock"
@@ -30,6 +35,15 @@ function App() {
         <Profile/>
         <Todo/>
         <Counter/>
+
+        <ContextApi/>
+
+       <CounterProvider>
+           <NestedComponent/>
+       </CounterProvider>
+
+          <ContextButton/>
+          <TextComponent/>
 
     </>
   )
