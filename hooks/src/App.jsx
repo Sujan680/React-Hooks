@@ -15,6 +15,7 @@ import UseReducerCounter from "./components/hoooks/useReducerHook/Counter"
 import ClickCounter from "./components/hoooks/UseRefHook/ClickCounter"
 import FocusInput from "./components/hoooks/UseRefHook/FocusInput"
 import PrevValue from "./components/hoooks/UseRefHook/PrevValue"
+import StopWatch from "./components/hoooks/UseRefHook/StopWatch"
 import Counter from "./components/hoooks/useStateHook/Counter"
 import Form from "./components/hoooks/useStateHook/Form"
 import Profile from "./components/hoooks/useStateHook/Profile"
@@ -55,6 +56,7 @@ function App() {
           <FocusInput/>
           <ClickCounter/>
           <PrevValue/>
+          <StopWatch/>
 
     </>
   )
