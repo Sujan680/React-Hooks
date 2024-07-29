@@ -11,6 +11,8 @@ import FetchApi from "./components/hoooks/UseEffect/FetchApi"
 import FetchUsingAsyncAwait from "./components/hoooks/UseEffect/FetchUsingAsyncAwait"
 import HowNotToFetchApi from "./components/hoooks/UseEffect/HowNotToFetchApi"
 import UseEffectChallenge from "./components/hoooks/UseEffect/UseEffectChallenge"
+import UseReducerCounter from "./components/hoooks/useReducerHook/Counter"
+import FocusInput from "./components/hoooks/UseRefHook/FocusInput"
 import Counter from "./components/hoooks/useStateHook/Counter"
 import Form from "./components/hoooks/useStateHook/Form"
 import Profile from "./components/hoooks/useStateHook/Profile"
@@ -44,6 +46,11 @@ function App() {
 
           <ContextButton/>
           <TextComponent/>
+
+          <UseReducerCounter/>
+
+          {/* useRef examples */}
+          <FocusInput/>
 
     </>
   )
