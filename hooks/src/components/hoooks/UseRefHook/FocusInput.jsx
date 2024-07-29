@@ -18,4 +18,4 @@ const FocusInput = () => {
   )
 }
 
-export default FocusInput
+export default FocusInput;

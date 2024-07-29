@@ -12,7 +12,9 @@ import FetchUsingAsyncAwait from "./components/hoooks/UseEffect/FetchUsingAsyncA
 import HowNotToFetchApi from "./components/hoooks/UseEffect/HowNotToFetchApi"
 import UseEffectChallenge from "./components/hoooks/UseEffect/UseEffectChallenge"
 import UseReducerCounter from "./components/hoooks/useReducerHook/Counter"
+import ClickCounter from "./components/hoooks/UseRefHook/ClickCounter"
 import FocusInput from "./components/hoooks/UseRefHook/FocusInput"
+import PrevValue from "./components/hoooks/UseRefHook/PrevValue"
 import Counter from "./components/hoooks/useStateHook/Counter"
 import Form from "./components/hoooks/useStateHook/Form"
 import Profile from "./components/hoooks/useStateHook/Profile"
@@ -51,6 +53,8 @@ function App() {
 
           {/* useRef examples */}
           <FocusInput/>
+          <ClickCounter/>
+          <PrevValue/>
 
     </>
   )
