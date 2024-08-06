@@ -12,6 +12,7 @@ const PrevValue = () => {
     useEffect(() => {
         prevCount.current = count;
     }, [count])
+    
     return (
         <div>
             <p> Current count: {count} </p>

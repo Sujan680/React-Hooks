@@ -1,4 +1,5 @@
-import { useRef } from "react"
+import { useRef } from "react";
+import './style.css';
 
 
 const FocusInput = () => {
@@ -10,7 +11,7 @@ const FocusInput = () => {
     }
 
   return (
-    <div>
+    <div className="input-focus-container">
         {/* accessing the DOM elements directly */}
         <input ref={inputRef} type="text" placeholder="Focus me" />
         <button onClick={handleClick}> Focus Me </button>

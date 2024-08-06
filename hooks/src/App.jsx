@@ -15,7 +15,9 @@ import UseReducerCounter from "./components/hoooks/useReducerHook/Counter"
 import ClickCounter from "./components/hoooks/UseRefHook/ClickCounter"
 import FocusInput from "./components/hoooks/UseRefHook/FocusInput"
 import PrevValue from "./components/hoooks/UseRefHook/PrevValue"
+import RenderCounter from "./components/hoooks/UseRefHook/RenderCounter"
 import StopWatch from "./components/hoooks/UseRefHook/StopWatch"
+import Timer from "./components/hoooks/UseRefHook/Timer"
 import Counter from "./components/hoooks/useStateHook/Counter"
 import Form from "./components/hoooks/useStateHook/Form"
 import Profile from "./components/hoooks/useStateHook/Profile"
@@ -57,6 +59,8 @@ function App() {
           <ClickCounter/>
           <PrevValue/>
           <StopWatch/>
+          <Timer/>
+          <RenderCounter/>
 
     </>
   )
