@@ -1,0 +1,83 @@
+
+
+Why is useContext Used?
+
+--->'useContext' is used to manage and share data or state across multiple 
+components in a react without having to pass props down through multiple 
+levels of components tree,
+--> It helps to avoid 'props drilling' where you pass through severals layers
+of components, which make the code harder to manage and understand
+
+How 'useContext' works?
+
+---> 1.  create context:
+        export const myContext = createContext();
+
+     2. Provide a Context:  component to wrap your application or a part of it where you want the context to be available.
+
+     e.g.   <ThemeContext.Provider value={{ }}>
+                ...code..
+            </ThemeContext.Provider>
+     3. Consume the Context
+        --->Use the 'useContext' hook to access the context value in a component.
+
+
+       :: for example::
+
+       1. create context
+
+       import React, { createContext, useState } from 'react';
+
+        export const ThemeContext = createContext();
+
+        export const ThemeProvider = ({ children }) => {
+        const [theme, setTheme] = useState('light');
+
+        const toggleTheme = () => {
+            setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+        };
+
+        return (
+            <ThemeContext.Provider value={{ theme, toggleTheme }}>
+            {children}
+            </ThemeContext.Provider>
+        );
+        };
+
+        2. Provide the Context:
+        import React from 'react';
+        import ReactDOM from 'react-dom';
+        import App from './App';
+        import { ThemeProvider } from './ThemeContext';
+
+        ReactDOM.render(
+        <ThemeProvider>
+            <App />
+        </ThemeProvider>,
+        document.getElementById('root')
+        );
+
+        3. Consume the Context
+
+        import React, { useContext } from 'react';
+        import { ThemeContext } from './ThemeContext';
+
+        const ThemedComponent = () => {
+        const { theme, toggleTheme } = useContext(ThemeContext);
+
+        const themeStyles = {
+            backgroundColor: theme === 'light' ? '#fff' : '#333',
+            color: theme === 'light' ? '#000' : '#fff',
+            padding: '10px',
+            textAlign: 'center'
+        };
+
+        return (
+            <div style={themeStyles}>
+            <p>Current Theme: {theme}</p>
+            <button onClick={toggleTheme}>Toggle Theme</button>
+            </div>
+        );
+        };
+
+        export default ThemedComponent;

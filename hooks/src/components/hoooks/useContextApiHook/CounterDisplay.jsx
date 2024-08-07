@@ -15,4 +15,4 @@ const CounterDisplay = () => {
   )
 }
 
-export default CounterDisplay
+export default CounterDisplay;
