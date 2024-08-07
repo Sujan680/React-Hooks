@@ -1,0 +1,52 @@
+
+
+What is useReducer Hooks??
+
+--->   The useReducer hook in React js is a hook for managing state in a more predictable way, especially useful for complex state logic.
+
+--->  It is similar to 'useState' but allows you to manage state with a reducer function.
+
+---> It is often used as an alternative to useState when the state logic becomes too complex or when the next state depends on the previous state.
+
+
+"Concepts of useReducer"::
+
+1.  Reducer Function: 
+---> A function that takes two arguments, the current  state and an action, and returns the new state.
+
+e.g,,,
+        function reducer(state, action) {
+        switch (action.type) {
+            case 'increment':
+                return { count: state.count + 1 };
+            case 'decrement':
+                return { count: state.count - 1 };
+            default:
+                throw new Error('Unknown action type');
+        }
+        }
+
+2.  
+---> Initial State: The state value used when the component is first rendered.
+
+e.g...
+    const initialState = { count: 0 };
+
+
+3.  Dispatch Function:
+ ---> A function returned by useReducer that is used to dispatch actions to the reducer.
+    e.g.. 
+
+            function Counter() {
+            const [state, dispatch] = useReducer(reducer, initialState);
+
+            return (
+                <div>
+                <p>Count: {state.count}</p>
+                <button onClick={() => dispatch({ type: 'increment' })}>+</button>
+                <button onClick={() => dispatch({ type: 'decrement' })}>-</button>
+                </div>
+            );
+            }
+
+            export default Counter;
