@@ -5,8 +5,11 @@ import ThemeBtn from "./components/ThemeBtn";
 import Card from "./components/Card";
 
 export default function App() {
+  //1.. Initialize the state
   const [themeMode, setThemeMode] = useState('light');
 
+
+  // functions to change the state
   const lightTheme = () => {
     setThemeMode('light')
   }
@@ -16,11 +19,11 @@ export default function App() {
   }
 
   // actual change in theme
-
+    // Step 2: Apply the theme to the HTML element
   useEffect(() => {
    document.querySelector('html').classList.remove('light', 'dark')
    document.querySelector('html').classList.add(themeMode)
-  }, [themeMode])
+  }, [themeMode]) // Re-run this effect when themeMode changes
   
   return (
       <ThemeProvider value={{themeMode, lightTheme, darkTheme}}>
